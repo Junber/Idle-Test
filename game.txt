@@ -13,6 +13,17 @@ Resources
 	*car|cars
 		name:Cars
 		desc:Definitely beautiful.
+
+Buttons
+	*makeHuman
+		name:Make Nerve Ape
+		desc:Create a new, worthless life through science.
+		on click:yield 1 human
+
+	*buildCar
+		name:Build Car
+		desc:Melt down 4 humans into a beautiful vehicle fueled by agony.
+		on click:do makeCar with car
 		tag:car
 		on makeCar:
 			if (humans >= 4)
@@ -21,23 +32,18 @@ Resources
 			end
 		end
 
-Buttons
-	*makeHuman
-		name:Make Human
-		desc:Create a new, worthless life through science.
-		on click:yield 1 human
-
-	*buildCar
-		name:Build Car
-		desc:Melt down 4 humans into a beautiful vehicle fueled by agony.
-		on click:do makeCar with car
-
 Buildings
 	*lab
 		name:Lab
 		desc:Employ some nerve apes to nerve up more apes.
 		on tick:yield 1 human
 		cost:10 humans
+
+	*carVat
+		name:Car Breeding vat
+		desc:Use cars as breeding vats for nerve apes.
+		on tick:yield 5 human
+		cost:10 cars
 
 	*carFactory
 		name:Car Factory
