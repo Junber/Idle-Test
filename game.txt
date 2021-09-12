@@ -1,11 +1,31 @@
 Let's make a game!
 	name: Test
 
+Settings
+	stylesheet:stuff/bigBlue.css
+
+Buttons
+	*makeHuman
+		name:Make Human
+		desc:Create a new, worthless life through science.
+		on click:yield 1 human
+
+	*buildCar
+		name:Build Car
+		desc:Melt down 4 humans into a beautiful vehicle fueled by agony.
+		on click:
+			if (humans >= 4)
+				yield 1 car
+				lose 4 humans
+			end
+		end
+
+
 Resources
-	*humans
+	*human|humans
 		name:Nerve Ape
 		desc:Might be beautiful.
 
-	*cars
+	*car|cars
 		name:Cars
 		desc:Definitely beautiful.
