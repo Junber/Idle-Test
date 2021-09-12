@@ -34,19 +34,19 @@ Buttons
 Buildings
 	*lab
 		name:Lab
-		desc:Employ some nerve apes to nerve up more apes.
+		desc:Employ some nerve apes to nerve up more apes.<//><b>Effect:</b><.>Produces 1 nerve ape every second.
 		on tick:yield 1 human
 		cost:10 humans
 
 	*carVat
 		name:Car Breeding Vat
-		desc:Use cars as breeding vats for nerve apes.
+		desc:Use cars as breeding vats for nerve apes.<//><b>Effect:</b><.>Produces [?(have carSex)|10|5] nerve apes every second.
 		on tick:yield 5 human
 		cost:10 cars
 
 	*carFactory
 		name:Car Factory
-		desc:Let some nerve apes drive some cars that set about making new cars by running over people or whatever.
+		desc:Let some nerve apes drive some cars that set about making new cars by running over people or whatever.<//><b>Effect:</b><.>Produces 1 car from 4 nerve apes every second.
 		on tick:
 			if (humans >= 4)
 				yield 1 car
@@ -58,6 +58,6 @@ Buildings
 Upgrades
 	*carSex
 		name:Car Sex
-		desc:Make having sex in cars seem like a cool thing, resulting in Car Breeding Vats being more popular and more effective.
+		desc:Make having sex in cars seem like a cool thing.<//><b>Effect:</b><.>[n:carVat]s are twice as effective.
 		passive:multiply yield of carVat by 2
 		cost:10000 humans, 1000 cars
