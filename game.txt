@@ -23,9 +23,8 @@ Buttons
 	*buildCar
 		name:Build Car
 		desc:Melt down 4 humans into a beautiful vehicle fueled by agony.
-		on click:do makeCar with car
 		tag:car
-		on makeCar:
+		on click:
 			if (humans >= 4)
 				yield 1 car
 				lose 4 humans
@@ -40,7 +39,7 @@ Buildings
 		cost:10 humans
 
 	*carVat
-		name:Car Breeding vat
+		name:Car Breeding Vat
 		desc:Use cars as breeding vats for nerve apes.
 		on tick:yield 5 human
 		cost:10 cars
@@ -48,5 +47,17 @@ Buildings
 	*carFactory
 		name:Car Factory
 		desc:Let some nerve apes drive some cars that set about making new cars by running over people or whatever.
-		on tick:do makeCar with car
+		on tick:
+			if (humans >= 4)
+				yield 1 car
+				lose 4 humans
+			end
+		end
 		cost:10 cars, 10 humans
+
+Upgrades
+	*carSex
+		name:Car Sex
+		desc:Make having sex in cars seem like a cool thing, resulting in Car Breeding Vats being more popular and more effective.
+		passive:multiply yield of carVat by 2
+		cost:10000 humans, 1000 cars
