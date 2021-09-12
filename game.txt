@@ -1,0 +1,11 @@
+Let's make a game!
+	name: Test
+
+Resources
+	*humans
+		name:Nerve Ape
+		desc:Might be beautiful.
+
+	*cars
+		name:Cars
+		desc:Definitely beautiful.
