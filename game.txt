@@ -13,6 +13,7 @@ Resources
 	*car|cars
 		name:Cars
 		desc:Definitely beautiful.
+		tag:car
 		on makeCar:
 			if (humans >= 4)
 				yield 1 car
@@ -29,7 +30,7 @@ Buttons
 	*buildCar
 		name:Build Car
 		desc:Melt down 4 humans into a beautiful vehicle fueled by agony.
-		on click: do makeCar
+		on click:do makeCar with car
 
 Buildings
 	*lab
@@ -41,4 +42,5 @@ Buildings
 	*carFactory
 		name:Car Factory
 		desc:Let some nerve apes drive some cars that set about making new cars by running over people or whatever.
+		on tick:do makeCar with car
 		cost:10 cars, 10 humans
