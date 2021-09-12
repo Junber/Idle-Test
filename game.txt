@@ -19,6 +19,7 @@ Buttons
 		name:Make Nerve Ape
 		desc:Create a new, worthless life through science.
 		on click:yield 1 human
+		no text
 		icon:https://raw.githubusercontent.com/Junber/Idle-Test/main/NerveApe.png
 		class:bigButton
 
@@ -34,6 +35,9 @@ Buttons
 				toast Not enough humans.
 			end
 		end
+		no text
+		icon:https://raw.githubusercontent.com/Junber/Idle-Test/main/Car.png
+		class:bigButton
 
 Buildings
 	*lab
