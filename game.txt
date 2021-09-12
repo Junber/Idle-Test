@@ -19,6 +19,7 @@ Buttons
 		name:Make Nerve Ape
 		desc:Create a new, worthless life through science.
 		on click:yield 1 human
+		icon:https://raw.githubusercontent.com/Junber/Idle-Test/main/NerveApe.png
 
 	*buildCar
 		name:Build Car
@@ -28,6 +29,8 @@ Buttons
 			if (humans >= 4)
 				yield 1 car
 				lose 4 humans
+			else
+				toast Not enough humans.
 			end
 		end
 
