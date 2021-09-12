@@ -14,6 +14,11 @@ CSS
 		left:66.66%;
 	}
 
+Layout
+	use default
+	*achievements
+		in:main
+		contains:Achievements
 
 Resources
 	*human|humans
@@ -90,6 +95,9 @@ Upgrades
 		cost:10000 humans, 1000 cars
 
 Achievements
+	*TEMPLATE
+		shown
+		
 	*earth
 		name:Earth
 		desc:Have as more nerve apes than there are nerve apes right now.
