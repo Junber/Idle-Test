@@ -98,6 +98,11 @@ Achievements
 	*TEMPLATE
 		shown
 		
+	*apocarlypse
+		name:Apocarlypse
+		desc:A bunch of cars
+		req:humans >= 10000
+
 	*earth
 		name:Earth
 		desc:Have as more nerve apes than there are nerve apes right now.
