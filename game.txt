@@ -4,6 +4,16 @@ Let's make a game!
 Settings
 	stylesheet:stuff/bigBlue.css
 
+CSS
+	.thing.bigButton.left
+	{
+		left:33.33%;
+	}
+	.thing.bigButton.right
+	{
+		left:66.66%;
+	}
+
 
 Resources
 	*human|humans
@@ -21,7 +31,7 @@ Buttons
 		on click:yield 1 human
 		no text
 		icon:https://raw.githubusercontent.com/Junber/Idle-Test/main/NerveApe.png
-		class:bigButton
+		class:bigButton left
 
 	*buildCar
 		name:Build Car
@@ -37,7 +47,7 @@ Buttons
 		end
 		no text
 		icon:https://raw.githubusercontent.com/Junber/Idle-Test/main/Car.png
-		class:bigButton
+		class:bigButton right
 
 Buildings
 	*lab
