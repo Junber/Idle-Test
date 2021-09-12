@@ -7,11 +7,11 @@ Settings
 
 Resources
 	*human|humans
-		name:Nerve Ape
+		name:Nerve Ape|Nerve Apes
 		desc:Might be beautiful.
 
 	*car|cars
-		name:Cars
+		name:Car|Cars
 		desc:Definitely beautiful.
 
 Buttons
@@ -64,6 +64,15 @@ Upgrades
 		name:Car Sex
 		desc:Make having sex in cars seem like a cool thing.<//><b>Effect:</b><.>[n:carVat]s are twice as effective.
 		passive:multiply yield of carVat by 2
+		cost:10000 humans, 1000 cars
+
+	*betterButtons
+		name:Better Buttons
+		desc:Click.<//><b>Effect:</b><.>Make clicking buttons twice as effective.
+		passive:
+			multiply yield of makeHuman by 2
+			multiply yield of buildCar by 2
+			end
 		cost:10000 humans, 1000 cars
 
 Achievements
