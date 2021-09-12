@@ -64,3 +64,9 @@ Upgrades
 		desc:Make having sex in cars seem like a cool thing.<//><b>Effect:</b><.>[n:carVat]s are twice as effective.
 		passive:multiply yield of carVat by 2
 		cost:10000 humans, 1000 cars
+
+Achievements
+	*earth
+		name:Earth
+		desc:Have as more nerve apes than there are nerve apes right now.
+		req:humans >= 7700000000
