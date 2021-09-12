@@ -1,6 +1,9 @@
 Let's make a game!
 	name: Test
 
+Settings
+	stylesheet:stuff/bigBlue.css
+
 CSS
 	.thing.bigButton.left
 	{
@@ -9,6 +12,10 @@ CSS
 	.thing.bigButton.right
 	{
 		left:66.66%;
+	}
+	.thing.achiev.hidden
+	{
+		display: inline-block !important;
 	}
 
 Layout
@@ -91,10 +98,7 @@ Upgrades
 			end
 		cost:10000 humans, 1000 cars
 
-Achievements
-	*TEMPLATE
-		shown
-		
+Achievements		
 	*apocarlypse
 		name:Apocarlypse
 		desc:A bunch of cars
