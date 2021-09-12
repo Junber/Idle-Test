@@ -20,6 +20,7 @@ Buttons
 		desc:Create a new, worthless life through science.
 		on click:yield 1 human
 		icon:https://raw.githubusercontent.com/Junber/Idle-Test/main/NerveApe.png
+		class:bigButton
 
 	*buildCar
 		name:Build Car
